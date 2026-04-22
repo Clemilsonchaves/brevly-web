@@ -80,9 +80,9 @@ export default function Home() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      setFeedback({ tone: "success", message: "Link copiado para a area de transferencia" });
+      setFeedback({ tone: "success", message: "Link copiado para a área de transferência" });
     } catch {
-      setFeedback({ tone: "error", message: "Nao foi possivel copiar o link" });
+      setFeedback({ tone: "error", message: "Não foi possivel copiar o link" });
     }
   }, []);
 
