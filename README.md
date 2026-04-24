@@ -1,56 +1,49 @@
 
 # brevly-web
 
-Aplicação web para encurtamento de URLs. Permite criar links curtos e personalizados, com rastreamento de cliques e gerenciamento de links encurtados através de uma interface intuitiva.
+Frontend do projeto de encurtamento de URLs.
 
-## 📸 Preview
-
-![brevly thumbnail](./public/thumbnail.png)
+## ✨ Funcionalidades
+- Criar links curtos e personalizados
+- Listar, copiar e deletar links
+- Exportar todos os links em CSV
+- Verificar status do backend
 
 ## 🚀 Tecnologias Utilizadas
+- **Next.js** (App Router)
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **pnpm**
+- **Node.js**
+- **Vercel** (deploy)
 
-- **React** - Biblioteca JavaScript para construção de interfaces
-- **TypeScript** - Superset do JavaScript com tipagem estática
-- **Tailwind CSS** - Framework CSS utilitário
-- **Node.js** - Runtime JavaScript
+## 📦 Integração com Backend
+Consome a API [brevly-api](../brevly-api) nos seguintes endpoints:
+- `GET /health` — status do backend
+- `POST /links` — criar link
+- `GET /links` — listar links
+- `DELETE /links/:shortCode` — deletar link
+- `GET /links/export` — exportar CSV
 
-## 🛠️ Como Usar
-
+## 🛠️ Como rodar localmente
 ```bash
 pnpm install
 pnpm run dev
 ```
+
 ## 📋 Requisitos
+- Node.js 18+
+- pnpm
 
-- **Node.js** (v18 ou superior)
-- **pnpm** - Gerenciador de pacotes rápido
-- **Docker** - Para containerização
-- **PostgreSQL** - Banco de dados relacional
+## 🌐 Deploy
+- **Vercel** (recomendado para Next.js)
 
-## 🔧 Stack Completo
-
-- **Next.js** - Framework React com SSR e otimizações
-- **Prisma** - ORM para gerenciamento de banco de dados
-- **Cloudflare** - CDN e edge computing
-- **PostgreSQL** - Banco de dados principal
-- **Docker** - Containerização da aplicação
-- **pnpm** - Gerenciador de pacotes eficiente
-
-## 🚀 Instalação e Execução
-
-```bash
-pnpm install
-pnpm  run dev
+## ⚙️ Variáveis de ambiente
+Crie um arquivo `.env.local`:
+```
+NEXT_PUBLIC_API_URL=https://brevly-api.vercel.app
 ```
 
-Certifique-se de configurar as variáveis de ambiente (`.env.local`) com as credenciais do PostgreSQL e Cloudflare antes de executar.
-
-## 🌐 Deployment
-
-- **Vercel** - Plataforma de deploy para aplicações Next.js
-- **AWS ECR** - Registro de contêineres para armazenar imagens Docker
-- **AWS S3** - Serviço de armazenamento de objetos em nuvem
-
-## 📝 Licença
-
-MIT# brevly-web
+## 📄 Licença
+MIT
