@@ -38,7 +38,7 @@ async function proxy(request: NextRequest, params: { path: string[] }) {
         message: "Nao foi possivel conectar com o backend",
         target: targetUrl,
       },
-      { status: 502 }
+      { status: 502 },
     );
   }
 
@@ -49,32 +49,50 @@ async function proxy(request: NextRequest, params: { path: string[] }) {
   });
 }
 
-export async function GET(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
+export async function GET(
+  request: NextRequest,
+  context: { params: Promise<{ path: string[] }> },
+) {
   const params = await context.params;
   return proxy(request, params);
 }
 
-export async function POST(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
+export async function POST(
+  request: NextRequest,
+  context: { params: Promise<{ path: string[] }> },
+) {
   const params = await context.params;
   return proxy(request, params);
 }
 
-export async function PUT(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
+export async function PUT(
+  request: NextRequest,
+  context: { params: Promise<{ path: string[] }> },
+) {
   const params = await context.params;
   return proxy(request, params);
 }
 
-export async function PATCH(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
+export async function PATCH(
+  request: NextRequest,
+  context: { params: Promise<{ path: string[] }> },
+) {
   const params = await context.params;
   return proxy(request, params);
 }
 
-export async function DELETE(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
+export async function DELETE(
+  request: NextRequest,
+  context: { params: Promise<{ path: string[] }> },
+) {
   const params = await context.params;
   return proxy(request, params);
 }
 
-export async function OPTIONS(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
+export async function OPTIONS(
+  request: NextRequest,
+  context: { params: Promise<{ path: string[] }> },
+) {
   const params = await context.params;
   return proxy(request, params);
 }
