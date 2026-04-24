@@ -23,7 +23,10 @@ type Feedback = {
   message: string;
 };
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
+const API_URL =
+  typeof window !== "undefined"
+    ? process.env.NEXT_PUBLIC_API_URL || "https://brevly-api.vercel.app"
+    : process.env.NEXT_PUBLIC_API_URL || "/api";
 
 export default function Home() {
   const [originalUrl, setOriginalUrl] = useState("");
