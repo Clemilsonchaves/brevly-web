@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 
-const API_URL = process.env.API_URL || "http://localhost:3333";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3333";
 
 function buildTargetUrl(path: string[], search: string) {
   const normalizedBase = API_URL.endsWith("/") ? API_URL.slice(0, -1) : API_URL;
