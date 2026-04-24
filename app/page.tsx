@@ -168,8 +168,8 @@ export default function Home() {
         }
 
         const createdLink = (await response.json()) as LinkItem;
-        setOriginalUrl(createdLink.originalUrl);
-        setShortCode(createdLink.shortCode);
+        setOriginalUrl(createdLink.originalUrl || "");
+        setShortCode(createdLink.shortCode || "");
         setFeedback({ tone: "success", message: "Link criado com sucesso" });
         await loadLinks();
       } catch (error) {
