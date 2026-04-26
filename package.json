@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
-     "dev": "cross-env NEXT_DISABLE_DEVTOOLS=1 next dev",
-=======
     "dev": "cross-env NEXT_DISABLE_DEVTOOLS=1 next dev",
->>>>>>> 8e57e8d2 (Commit inicial repositório limpo)
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -22,13 +18,8 @@
     "fastify": "^5.8.5",
     "next": "16.2.4",
     "pg": "^8.20.0",
-<<<<<<< HEAD
-    "react": "19.2.5",
-    "react-dom": "19.2.5",
-=======
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
->>>>>>> 8e57e8d2 (Commit inicial repositório limpo)
     "uuid": "^14.0.0",
     "zod": "^4.3.6"
   },
@@ -43,11 +34,8 @@
     "tailwindcss": "^4.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
-<<<<<<< HEAD
-=======
   },
   "engines": {
     "node": "20.x"
->>>>>>> 8e57e8d2 (Commit inicial repositório limpo)
   }
 }
