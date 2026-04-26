@@ -164,7 +164,7 @@ export default function Home() {
 
         if (!response.ok) {
           const payload = (await response.json().catch(() => null)) as { message?: string } | null;
-          throw new Error(payload?.message || "Nao foi possivel criar o link");
+          throw new Error(payload?.message || "Não foi possivel criar o link");
         }
 
         const createdLink = (await response.json()) as LinkItem;
