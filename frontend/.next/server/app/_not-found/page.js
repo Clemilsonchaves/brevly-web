@@ -7,6 +7,6 @@ R.c("server/chunks/ssr/node_modules__pnpm_0902av_._.js")
 R.c("server/chunks/ssr/0.b9_next_dist_client_components_02r6ow.._.js")
 R.c("server/chunks/ssr/0.b9_next_dist_client_components_builtin_forbidden_0hfb-2x.js")
 R.c("server/chunks/ssr/0.b9_next_dist_client_components_builtin_unauthorized_0xhsri..js")
-R.c("server/chunks/ssr/_next-internal_server_app__not-found_page_actions_0eq97pa.js")
+R.c("server/chunks/ssr/0ipn_brevly-web_frontend__next-internal_server_app__not-found_page_actions_0itr1lq.js")
 R.m(68278)
 module.exports=R.m(68278).exports

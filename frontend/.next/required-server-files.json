@@ -70,7 +70,9 @@
       "unoptimized": false,
       "customCacheHandler": false
     },
-    "devIndicators": false,
+    "devIndicators": {
+      "position": "bottom-left"
+    },
     "onDemandEntries": {
       "maxInactiveAge": 60000,
       "pagesBufferLength": 5
@@ -102,7 +104,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\aksac\\Downloads\\brevly-web\\frontend",
+    "outputFileTracingRoot": "C:\\Users\\aksac",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -218,6 +220,9 @@
       "turbopackFileSystemCacheForBuild": false,
       "turbopackInferModuleSideEffects": true,
       "turbopackPluginRuntimeStrategy": "childProcesses",
+      "turbopack": {
+        "root": "C:\\Users\\aksac\\Downloads\\brevly-web\\frontend"
+      },
       "optimizePackageImports": [
         "lucide-react",
         "date-fns",
@@ -302,12 +307,12 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\aksac\\Downloads\\brevly-web\\frontend"
+      "root": "C:\\Users\\aksac"
     },
     "distDirRoot": ".next"
   },
   "appDir": "C:\\Users\\aksac\\Downloads\\brevly-web\\frontend",
-  "relativeAppDir": "",
+  "relativeAppDir": "Downloads\\brevly-web\\frontend",
   "files": [
     ".next\\routes-manifest.json",
     ".next\\server\\pages-manifest.json",
