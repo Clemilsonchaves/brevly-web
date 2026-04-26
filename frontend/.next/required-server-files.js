@@ -220,9 +220,6 @@ self.__SERVER_FILES_MANIFEST={
       "turbopackFileSystemCacheForBuild": false,
       "turbopackInferModuleSideEffects": true,
       "turbopackPluginRuntimeStrategy": "childProcesses",
-      "turbopack": {
-        "root": "C:\\Users\\aksac\\Downloads\\brevly-web\\frontend"
-      },
       "optimizePackageImports": [
         "lucide-react",
         "date-fns",
