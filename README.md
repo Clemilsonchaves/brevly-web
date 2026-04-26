@@ -1,7 +1,11 @@
 
-# brevly-web
 
+# brev.ly
 Frontend do projeto de encurtamento de URLs.
+
+<p align="center">
+	<img src="frontend/public/thumbnail.png" alt="Thumbnail" width="600"/>
+</p>
 
 ## ✨ Funcionalidades
 - Criar links curtos e personalizados
