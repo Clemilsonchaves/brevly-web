@@ -2,6 +2,10 @@
   "name": "brev-ly",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.8.0",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "cross-env NEXT_DISABLE_DEVTOOLS=1 next dev",
     "build": "next build",
@@ -35,9 +39,5 @@
     "tailwindcss": "^4.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
-  },
-  "engines": {
-    "node": "20.x"
-  },
-  "packageManager": "pnpm@10.8.0"
+  }
 }
