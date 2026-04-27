@@ -121,7 +121,7 @@ export default function Home() {
       });
 
       if (!response.ok) {
-        throw new Error("Não foi possivel exportar os links");
+        throw new Error("Não foi possivel exportar os links!");
       }
 
       const blob = await response.blob();
