@@ -38,5 +38,15 @@
   },
   "engines": {
     "node": "20.x"
+  },
+  "packages": {
+    "brevly-web": {
+      "name": "brevly-web",
+      "version": "0.1.0",
+      "packageManager": "pnpm@10.8.0",
+      "engines": {
+        "node": "20.x"
+      }
+    }
   }
 }
