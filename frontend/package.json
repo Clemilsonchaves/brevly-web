@@ -2,6 +2,10 @@
   "name": "brev-ly",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "packageManager": "pnpm@10.8.0",
   "scripts": {
     "dev": "cross-env NEXT_DISABLE_DEVTOOLS=1 next dev",
     "build": "next build",
